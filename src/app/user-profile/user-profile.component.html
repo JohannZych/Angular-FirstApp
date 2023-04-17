@@ -1,0 +1,8 @@
+<div class="card">
+  <img [src]="user.photo" [alt]="user.name">
+  <p>Nom : {{user.name}}</p>
+  <p>Prénom : {{user.firstName}}</p>
+  <input type="text" placeholder="{{user.quote}}">
+  <p *ngIf="element == false"><button (click)="showData()">Afficher Age</button></p>
+  <p *ngIf="element == true">{{user.age}}<br><button (click)="hideData()">Masquer Age</button></p>
+</div>
