@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {User} from "../models/user.model";
 
 @Component({
   selector: 'app-sign-up',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class SignUpComponent {
 
+  user: User = new User('', '', '', '');
+
+  ngOnInit(): void {
+  }
+
+  onSubmit(): void {
+    // Formulaire envoyé
+    console.log(this.user);
+  }
 }
