@@ -1,6 +1,11 @@
-
 <!-- <app-user-profile></app-user-profile>-->
 <!--  <app-menu></app-menu>-->
 <!--<router-outlet></router-outlet>-->
+<!--<app-developer></app-developer>-->
 
-<app-developer></app-developer>
+<div *ngFor="let onomatopia of onomatopoeiaList">
+  {{ onomatopia }}
+</div>
+<app-create-onomatopia
+  (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"
+></app-create-onomatopia>

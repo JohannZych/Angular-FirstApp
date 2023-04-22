@@ -10,6 +10,7 @@ import { MyFormComponent } from './my-form/my-form.component';
 import {FormsModule} from "@angular/forms";
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SkillComponent } from './skill/skill.component';
     MyFormComponent,
     DeveloperComponent,
     SkillComponent,
+    CreateOnomatopiaComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<form>
+  <fieldset>
+    <label for="newOnomatopia">Nouvel Onomatopée : </label>
+    <input id="newOnomatopia" name="newOnomatopia" type="text" [(ngModel)]="newOnomatopia"/>
+  </fieldset>
+</form>
+
+<button (click)="createOnommatopia(newOnomatopia)">Envoyer des Onomatopées</button>
