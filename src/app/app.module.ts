@@ -8,6 +8,8 @@ import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MyFormComponent } from './my-form/my-form.component';
 import {FormsModule} from "@angular/forms";
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import {FormsModule} from "@angular/forms";
     MenuComponent,
     SignUpComponent,
     MyFormComponent,
+    DeveloperComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
