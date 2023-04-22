@@ -6,7 +6,7 @@ import {User} from "../models/user.model";
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
-export class SignUpComponent {
+export class SignUpComponent implements OnInit{
 
   user: User = new User('', '', '', '');
 
