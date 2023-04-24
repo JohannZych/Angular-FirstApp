@@ -1,0 +1,25 @@
+<section class="aside-kitten-adopt">
+  <h2>Chaton à proposer à l'adoption :</h2>
+  <form #myForm="ngForm"  (ngSubmit)="myForm.valid">
+    <div class="form-group">
+      <label for="kitten-name">Nom du chaton</label>
+      <input class="form-control" id="kitten-name" name="kitten-name" type="text" required minlength="5">
+    </div>
+
+    <div class="form-group">
+      <label for="kitten-catBreed">Race</label>
+      <input class="form-control" id="kitten-catBreed" name="kitten-catBreed" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label for="kitten-birthday">Date de Naissance</label>
+      <input class="form-control" id="kitten-birthday" name="kitten-birthday" type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="kitten-image">Photo</label>
+      <input class="form-control" id="kitten-image" name="kitten-image" type="text" required>
+    </div>
+    <button type="submit" class="btn" [ngClass]="{'btn-success': myForm.valid}">Enregistrer</button>
+  </form>
+</section>

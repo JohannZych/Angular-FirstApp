@@ -1,0 +1,18 @@
+<section class="block-container">
+  <h2>Chatons à adopter</h2>
+  <section class="card-container" *ngFor="let kitten of catList">
+    <div class="card" style="width: 18rem;">
+      <img src="{{kitten.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{kitten.name}}</h5>
+        <p class="card-text">{{kitten.catBreed}}</p>
+        <p class="card-text">{{kitten.birthday}}</p>
+        <button (click)="adoptKitten(kitten)" class="btn btn-primary">Adopter le !</button>
+      </div>
+    </div>
+  </section>
+</section>
+<app-user-kitten [newUserKitten]="newUserKitten" class="block-container"></app-user-kitten>
+<app-create-kitten class="block-container"></app-create-kitten>
+
+

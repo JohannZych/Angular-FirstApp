@@ -3,9 +3,12 @@
 <!--<router-outlet></router-outlet>-->
 <!--<app-developer></app-developer>-->
 
-<div *ngFor="let onomatopia of onomatopoeiaList">
-  {{ onomatopia }}
-</div>
-<app-create-onomatopia
-  (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"
-></app-create-onomatopia>
+<!--<div *ngFor="let onomatopia of onomatopoeiaList">-->
+<!--  {{ onomatopia }}-->
+<!--</div>-->
+<!--<app-create-onomatopia-->
+<!--  (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"-->
+<!--&gt;</app-create-onomatopia>-->
+<section class="main-container">
+<app-list-kitten></app-list-kitten>
+</section>

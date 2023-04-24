@@ -1,0 +1,15 @@
+<section class="aside-kitten">
+  <h2>Mes Chatons</h2>
+  <div>
+    <section class="card-container">
+      <div class="card" style="width: 18rem;" *ngFor="let kitten of newUserKitten">
+        <img src="{{kitten.image}}" class="card-img-top" alt="...">
+        <div class="card-body card-body-hover">
+          <h5 class="card-title">{{kitten.name}}</h5>
+          <p class="card-text">{{kitten.catBreed}}</p>
+          <p class="card-text">{{kitten.birthday}}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

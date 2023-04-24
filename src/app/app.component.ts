@@ -1,5 +1,8 @@
-import {Component, Input} from '@angular/core';
-import { CreateOnomatopiaComponent} from "./create-onomatopia/create-onomatopia.component";
+import {Component, Input, Output} from '@angular/core';
+import {CreateOnomatopiaComponent} from "./create-onomatopia/create-onomatopia.component";
+import {UserKittenComponent} from "./user-kitten/user-kitten.component";
+import {ListKittenComponent} from "./list-kitten/list-kitten.component";
+import {Kitten} from "./models/kitten.model";
 
 @Component({
   selector: 'app-root',

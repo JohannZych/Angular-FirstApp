@@ -1,0 +1,17 @@
+.card {
+  margin: 20px;
+}
+
+.card-body-hover {
+  color: white;
+}
+
+.card-body-hover:hover {
+  color: black;
+}
+
+.aside-kitten {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
