@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
+import {Kitten} from "../models/kitten.model";
 
 @Component({
   selector: 'app-create-kitten',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-kitten.component.css']
 })
 export class CreateKittenComponent {
+  @Input()
+  catList!: Kitten[];
+
+  kitten: Kitten = new Kitten("", "", "", "");
+
+  onSubmit() {
+    this.catList.push(new Kitten(
+      this.kitten.name,
+      this.kitten.catBreed,
+      this.kitten.birthday,
+      this.kitten.image));
+  }
 
 }
