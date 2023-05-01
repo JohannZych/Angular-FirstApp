@@ -1,11 +1,11 @@
 export class Cocktail {
   name: string;
   price: number;
-  image: string;
+  img: string;
 
   constructor(name: string, price: number, image: string) {
     this.name = name;
     this.price = price;
-    this.image = image;
+    this.img = image;
   }
 }

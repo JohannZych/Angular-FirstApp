@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Sex on the beach",
+    "price": 10,
+    "img": "assets/images/cocktail-tropical-kamasutra.jpg"
+  },
+  {
+    "name": "Marguarita",
+    "price": 13,
+    "img": "assets/images/cocktail-tropical-kamasutra.jpg"
+  },
+  {
+    "name": "Martini",
+    "price": 8,
+    "img": "assets/images/cocktail-tropical-kamasutra.jpg"
+  }
+]
