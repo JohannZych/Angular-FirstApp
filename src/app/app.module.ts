@@ -14,6 +14,7 @@ import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia
 import { CreateKittenComponent } from './create-kitten/create-kitten.component';
 import { ListKittenComponent } from './list-kitten/list-kitten.component';
 import { UserKittenComponent } from './user-kitten/user-kitten.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { UserKittenComponent } from './user-kitten/user-kitten.component';
     CreateKittenComponent,
     ListKittenComponent,
     UserKittenComponent,
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,

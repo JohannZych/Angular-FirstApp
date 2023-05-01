@@ -36,7 +36,8 @@
 
     <div class="form-group">
       <label for="kitten-image">Photo</label>
-      <input class="form-control" id="kitten-image" name="kitten-image" #image="ngModel" [(ngModel)]="kitten.image" type="text" required>
+      <input class="form-control" id="kitten-image" name="kitten-image" #image="ngModel" [(ngModel)]="kitten.image"
+             type="text" required>
     </div>
 
     <div *ngIf="image.errors">
