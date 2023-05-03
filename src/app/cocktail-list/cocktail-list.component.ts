@@ -17,5 +17,7 @@ export class CocktailListComponent implements OnInit {
     this.cocktailService.getCocktails().subscribe(cocktailsFromJsonFile => {
       this.cocktails = cocktailsFromJsonFile;
     });
+
+    this.cocktailService.getData();
   }
 }
